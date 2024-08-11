@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Cards from "./Card";
-import img1 from "../../assets/category/earphone.png";
-import img3 from "../../assets/category/watch.png";
-import img4 from "../../assets/category/macbook.png";
-const Category = () => {
+import img1 from "../../assets/category/gaming.png";
+import img2 from "../../assets/category/speaker.png";
+import img3 from "../../assets/category/vr.png";
+
+const Catergory02 = () => {
   return (
     <>
       <div className="py-8">
@@ -13,42 +14,45 @@ const Category = () => {
             {/* 1st col */}
             <Cards
               title={"Enjoy"}
+              pTitle={"text-white"}
               subtile={"with"}
-              description={"Earphone"}
+              description={"X-box"}
+              pDiscription={"text-white"}
               buttonText={"Browse"}
               buttonbgColor={"bg-primary"}
               textColors={"text-white"}
               imgSrc={img1}
+              cardbgColor={"bg-brandYellow"}
+              className="md:col-span-2 from-gray-300 to-gray-100"
+              imgclassName="-right-0 top-1/2 -translate-y-1/2 w-[250px] "
             />
             {/* 2nd col */}
             <Cards
               title={"Enjoy"}
               pTitle={"text-white"}
               subtile={"with"}
-              description={"Gadget"}
-              pDiscription={"text-white"}
+              description={"Apple-VR"}
               buttonText={"Browse"}
               buttonbgColor={"bg-white"}
-              textColors={"text-brandYellow"}
+              textColors={"text-brandGreen"}
               imgSrc={img3}
               cardbgColor={"bg-brandYellow"}
-              className="from-brandYellow/90 to-brandYellow/70"
-              imgclassName="-right-4 lg:top-[40px]  bottom-[100px] pl-7"
+              className="from-brandGreen/90 to-brandGreen/70"
+              imgclassName="-right-0 lg:top-[40px] w-[270px] top-1 pl-7 "
             />
             {/* 3rd col */}
             <Cards
               title={"Enjoy"}
               pTitle={"text-white"}
               subtile={"with"}
-              description={"Laptop"}
-              pDiscription={"text-white"}
+              description={"Speakers"}
               buttonText={"Browse"}
               buttonbgColor={"bg-white"}
-              textColors={"text-secondary"}
-              imgSrc={img4}
+              textColors={"text-brandBlue"}
+              imgSrc={img2}
               cardbgColor={"bg-brandYellow"}
-              className="md:col-span-2 from-secondary/90 to-secondary/70"
-              imgclassName="-right-3 md:-right-0 top-1/2 -translate-y-1/2 w-[210px] md:w-[290px] "
+              className="from-brandBlue/90 to-brandBlue/70"
+              imgclassName="-right-0 lg:top-[40px] w-[260px] top-1 pl-7 "
             />
           </div>
         </div>
@@ -57,4 +61,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default Catergory02;
