@@ -3,6 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 import data from "./Herodata";
 import Button from "../shared/Button";
+
 const ComponentName = () => {
   var settings = {
     dots: false,
