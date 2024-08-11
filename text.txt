@@ -1,0 +1,74 @@
+// const navtrigbtn = document.querySelector("#nav_trigger_btn");
+// const menubtn = document.querySelector("#nav_menu");
+// navtrigbtn.addEventListener("click", () => {
+//   menubtn.classList.toggle("nav-is-open");
+// });
+// <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
+// <header className="bg-white dark:bg-gray-900 relative z-40">
+//   <div className="py-6">
+//     <nav className="container flex justify-between items-center">
+//       {/* logo section */}
+//       <div className="flex items-center">
+//         <a
+//           href="#"
+//           className="text-primary text-2xl font-semibold tracking-widest uppercase sm:text-3xl"
+//         >
+//           SlanInt_Shop
+//         </a>
+//         {/* menu items */}
+//         <div className="hidden lg:block items-center pl-[140px] ">
+//           <ul className="flex gap-2 items-center">
+//             {MenuLinks.map((data, index) => (
+//               <li
+//                 key={index}
+//                 className="inline-block font-semibold px-4 text-gray-500 hover:text-black dark:hover:text-white duration-200"
+//               >
+//                 <a href={data.link}>{data.name}</a>
+//               </li>
+//             ))}
+//           </ul>
+//         </div>
+//         {/* navbar right section Searchbar */}
+//       </div>
+//       <div className="flex justify-between items-center gap-4">
+//         <div className="relative group hidden sm:block">
+//           <input type="text" placeholder="search" className="search" />
+//           <IoMdSearch className="text-xl text-gray-600 dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 group-hover:text-primary duration-200" />
+//         </div>
+//         <button className="relative p-3">
+//           <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
+//         </button>
+//         <div>
+//           <ThemeBtn />
+//         </div>
+//       </div>
+//     </nav>
+//   </div>
+// </header>
+// </ThemeProvider>
+
+////////////////////
+ {/* Cart button placed inside li */}
+              {/* <div className="md:flex md:justify-between md:items-center md:px-[10px]">
+                <li className="md:ml-12">
+                  <div className="md:ml-auto mt-4 md:mt-0 flex items-center gap-4"> */}
+              {/* Search bar */}
+              {/* <div className="relative hidden md:block items-center">
+                      <input
+                        type="text"
+                        className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg w-full md:w-64"
+                        placeholder="Search..."
+                      />
+                      <IoMdSearch className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-500" />
+                    </div>
+                  </div>
+                </li>
+                <li className="md:ml-8">
+                  <button className="relative items-center">
+                    <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
+                  </button>
+                </li> */}
+              {/* <li className="md:ml-8">
+                  
+                </li> */}
+              {/* </div> */}
