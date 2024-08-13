@@ -4,6 +4,7 @@ import Cards from "./Card";
 import img1 from "../../assets/category/earphone.png";
 import img3 from "../../assets/category/watch.png";
 import img4 from "../../assets/category/macbook.png";
+
 const Category = () => {
   return (
     <>
@@ -23,10 +24,9 @@ const Category = () => {
             {/* 2nd col */}
             <Cards
               title={"Enjoy"}
-              pTitle={"text-white"}
+              pTitleclassName={"text-white"}
               subtile={"with"}
               description={"Gadget"}
-              pDiscription={"text-white"}
               buttonText={"Browse"}
               buttonbgColor={"bg-white"}
               textColors={"text-brandYellow"}
@@ -38,10 +38,9 @@ const Category = () => {
             {/* 3rd col */}
             <Cards
               title={"Enjoy"}
-              pTitle={"text-white"}
+              pTitleclassName={"text-white"}
               subtile={"with"}
               description={"Laptop"}
-              pDiscription={"text-white"}
               buttonText={"Browse"}
               buttonbgColor={"bg-white"}
               textColors={"text-secondary"}
