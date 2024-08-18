@@ -22,7 +22,7 @@ const Cards = ({
   return (
     <div
       className={`py-10 pl-5 shadow-xl bg-gradient-to-br from-black/90 to-black/70 text-white rounded-3xl relative h-[320px] flex items-end hover:transform hover:-translate-y-2 hover:shadow-lg transition-transform duration-300 ${cardbgColor} ${className} `}
-      {...props} // This will pass other props down to the div
+      {...props}
     >
       <div>
         <div className="mb-4">

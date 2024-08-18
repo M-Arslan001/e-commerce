@@ -6,17 +6,31 @@ import Category from "./components/category/Category";
 import Catergory02 from "./components/category/Category02";
 import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
+import Banner02 from "./components/Banner/Banner02";
 import img01 from "./assets/hero/headphone.png";
+import img02 from "./assets/category/smartwatch2-removebg-preview.png";
+import Products from "./components/Products/Products";
+import News_Section from "./components/news_section/News_Section";
 function App() {
   const data = {
     discount: "15% Off",
     title: "fine smile",
     date: "2023-11-10",
     image: img01,
-    title2: "Cozy & Warm",
+    title2: "Air Solo Base",
     title3: "Limited Stock",
-    title4: "Shop Today!",
+    title4: "Lorem ipsum Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. ",
     bgcolor: "#f42c37",
+  };
+  const data02 = {
+    discount: "30% Off",
+    title: "Happy Hours",
+    date: "2023-11-10",
+    image: img02,
+    title2: "smart solo",
+    title3: "Limited Stock",
+    title4: "Lorem ipsum Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. ",
+    bgcolor: "#2dcc6f",
   };
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
@@ -26,8 +40,10 @@ function App() {
       <Catergory02 />
       <Services />
       <Banner {...data} />
+      <Products />
+      <Banner02 {...data02} />
+      <News_Section />
     </div>
   );
 }
-
 export default App;
