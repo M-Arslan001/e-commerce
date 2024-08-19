@@ -11,6 +11,8 @@ import img01 from "./assets/hero/headphone.png";
 import img02 from "./assets/category/smartwatch2-removebg-preview.png";
 import Products from "./components/Products/Products";
 import News_Section from "./components/news_section/News_Section";
+import Brands from "./components/Brands_secetion/Brands";
+import Footer from "./components/footer/Footer";
 function App() {
   const data = {
     discount: "15% Off",
@@ -43,6 +45,8 @@ function App() {
       <Products />
       <Banner02 {...data02} />
       <News_Section />
+      <Brands />
+      <Footer />
     </div>
   );
 }
