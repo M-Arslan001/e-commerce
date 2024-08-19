@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 // import data from "./data";
+import { motion } from "framer-motion";
 
 const Banner = (data02) => {
   return (
@@ -18,10 +19,18 @@ const Banner = (data02) => {
             <p className="text-sm">{data02.date}</p>
           </div>
           <div className="h-full flex items-center">
-            <img
+            <motion.img
               src={data02.image}
               alt=""
-              className="scale-125 w-[250px] md:w-[340px] mx-auto drop-shadow-2xl object-cover "
+              className="scale-125 w-[250px] md:w-[500px] mx-auto drop-shadow-2xl object-cover"
+              animate={{
+                y: [0, -20, 0],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             />
           </div>
           <div className=" flex flex-col justify-center gap-4 p-6 sm:p-8">

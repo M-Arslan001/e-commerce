@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
+import { motion } from "framer-motion";
 import React from "react";
 // import data from "./data";
-
 const Banner = (data) => {
   return (
     <div className="min-h-[550px] flex justify-center items-center py-12">
@@ -18,10 +18,19 @@ const Banner = (data) => {
             <p className="text-sm">{data.date}</p>
           </div>
           <div className="h-full flex items-center">
-            <img
+            <motion.img
               src={data.image}
               alt=""
-              className="scale-125 w-[250px] md:w-[340px] mx-auto drop-shadow-2xl object-cover "
+              className="scale-125 w-[250px] md:w-[500px] mx-auto drop-shadow-2xl object-cover "
+              animate={{
+                y: [0, -20, 0],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              whileHover={{ x: 0, rotate: 0 }}
             />
           </div>
           <div className=" flex flex-col justify-center gap-4 p-6 sm:p-8">

@@ -3,6 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 import data from "./Herodata";
 import Button from "../shared/Button";
+import { motion } from "framer-motion";
 
 const ComponentName = () => {
   var settings = {
@@ -48,10 +49,18 @@ const ComponentName = () => {
                     </div>
                     <div className="order-1 sm:order-2">
                       <div>
-                        <img
+                        <motion.img
                           src={products.image}
                           className="w-[300px] sm:h-[450px] h-[300px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40"
                           alt=""
+                          animate={{
+                            y: [0, -20, 0],
+                          }}
+                          transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                          }}
                         />
                       </div>
                     </div>

@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import img1 from "../../assets/blogs/blog-1.jpg";
 
 const News_Section = () => {
   return (
@@ -12,7 +13,15 @@ const News_Section = () => {
       </div>
 
       <div>
-        <div className="container"></div>
+        <div className="container mb-11">
+          <div className="max-w-sm rounded-full ">
+            <img
+              className="w-full h-[350px] mx-auto object-cover"
+              src={img1}
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </>
   );
