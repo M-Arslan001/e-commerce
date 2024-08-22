@@ -11,7 +11,7 @@ const News_Section = () => {
         </div>
       </div>
       <div className="container mt-4 mb-5 cursor-pointer">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7 ">
           {data.map((item, index) => (
             <div key={index}>
               <div className="overflow-hidden rounded-2xl mb-2 ">
