@@ -1,10 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Button from "../shared/Button";
 import {
   FaFacebook,
   FaInstagram,
-  FaLocationArrow,
+  FaLocationDot,
   FaTwitter,
 } from "react-icons/fa6";
 import { FaLinkedin, FaMobileAlt } from "react-icons/fa";
@@ -63,11 +62,13 @@ const Footer = () => {
             {/* links */}
             <div className="py-7">
               <div>
-                <h1 className="font-bold text-2xl">Important links</h1>
+                <h1 className="font-bold text-2xl whitespace-nowrap">
+                  Important links
+                </h1>
                 <ul>
                   {MenuLinks.map((item, index) => (
                     <li
-                      className="py-[5px] place-content-center text-gray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300 cursor-pointer"
+                      className="py-[5px] text-gray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300 cursor-pointer"
                       key={index}
                     >
                       {item.name}
@@ -76,14 +77,17 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+
             {/* customer service */}
             <div className="py-7 ">
               <div>
-                <h1 className="font-bold text-2xl">Customer Service</h1>
+                <h1 className="font-bold text-2xl whitespace-nowrap">
+                  Customer Service
+                </h1>
                 <ul className="items-center">
                   {custmerService.map((item, index) => (
                     <li
-                      className="py-[5px] place-content-center text-gray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300 cursor-pointer"
+                      className="py-[5px]  text-gray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300 cursor-pointer"
                       key={index}
                     >
                       {item.name}
@@ -93,12 +97,11 @@ const Footer = () => {
               </div>
             </div>
             {/* address */}
-            <div className="py-7 ">
-              <h1 className="text-xl font-bold">Address</h1>
-              <address className="flex items-center gap-2 py-4">
-                {" "}
-                <FaLocationArrow />
-                <p> Wapda Town, Lahore</p>
+            <div className="py-[32px] ">
+              <h1 className="text-xl font-bold ">Address</h1>
+              <address className="flex items-center gap-2 py-4 ">
+                <FaLocationDot />
+                <p> 132, My Street, Kingston, New York 12401</p>
               </address>
               <div className=" flex items-center gap-2">
                 <FaMobileAlt />
