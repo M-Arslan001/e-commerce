@@ -1,6 +1,6 @@
-import VrImg from "../../assets/category/vr.png";
-import MacbookImg from "../../assets/category/macbook.png";
-import Headphone from "../../assets/hero/headphone.png";
+import VrImg from "../../assets/category/vrimg1.png";
+import MacbookImg from "../../assets/category/pngegg.png";
+import Headphone from "../../assets/category/hp03.png";
 
 const data = [
   {

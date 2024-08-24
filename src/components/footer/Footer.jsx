@@ -105,7 +105,7 @@ const Footer = () => {
               </address>
               <div className=" flex items-center gap-2">
                 <FaMobileAlt />
-                <p>Pakistan</p>
+                <p>(907) 262-626</p>
               </div>
               <div className="flex items-center gap-3 py-4 cursor-pointer">
                 <FaInstagram className="hover:text-red-600 duration-200 text-2xl" />
