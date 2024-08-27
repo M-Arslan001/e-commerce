@@ -5,6 +5,7 @@ import { IoMdSearch } from "react-icons/io";
 import ThemeBtn from "../ThemeChanger/ThemeBtn";
 import { ThemeProvider } from "../../context/Theme";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
 function Navbar() {
   const [themeMode, setTheme] = useState("light");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,17 +30,17 @@ function Navbar() {
     {
       id: 2,
       name: "Shop",
-      link: "#/shop",
+      link: "/shop",
     },
     {
       id: 3,
       name: "About",
-      link: "#/about",
+      link: "/about",
     },
     {
       id: 4,
       name: "Blogs",
-      link: "#/blog",
+      link: "/blogs",
     },
   ];
 
@@ -55,9 +56,9 @@ function Navbar() {
           <div className="flex justify-between items-center w-full md:w-auto">
             {/* logo here */}
             <div className="cursor-pointer items-center gap-2">
-              <a href="#" className="text-2xl text-primary font-bold">
+              <Link to="/" className="text-2xl text-primary font-bold">
                 Zen<span className="text-brandGreen">Cart</span>
-              </a>
+              </Link>
             </div>
             {/* Menu icon */}
             <button className="text-2xl md:hidden" onClick={toggleMenu}>
@@ -76,7 +77,9 @@ function Navbar() {
                   className="dark:hover:text-white text-gray-500 hover:text-black font-semibold my-7 md:my-0 md:ml-5 "
                   key={index}
                 >
-                  <a href={data.link}>{data.name}</a>
+                  <NavLink to={data.link} activeClassName="text-brandGreen">
+                    {data.name}
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -91,7 +94,9 @@ function Navbar() {
               </div>
               <div className="flex flex-col px-9 md:px-0 md:flex-row ">
                 <button className="relative items-center">
-                  <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
+                  <Link to="/cart">
+                    <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
+                  </Link>
                 </button>
               </div>
               <div className="hidden md:block items-center">
