@@ -4,7 +4,7 @@ import React from "react";
 import Hero from "../../components/Hero_Section/Hero";
 import Category from "../../components/category/Category";
 import Catergory02 from "../../components/category/Category02";
-import Services from "../../Services/Services";
+import Services from "../../components/Services/Services";
 import Banner from "../../components/Banner/Banner";
 import Banner02 from "../../components/Banner/Banner02";
 import Products from "../../components/Products/Products";

@@ -27,13 +27,17 @@ const SideBar = () => {
     {
       name: "Headphones",
       icon: <FiHeadphones />,
-      subItems: ["Item 1", "Item 2"],
+      subItems: ["Lenovo Headphone"],
     },
-    { name: "Lenovo", icon: <FiMonitor />, subItems: ["Item 1", "Item 2"] },
+    {
+      name: "Lenovo",
+      icon: <FiMonitor />,
+      subItems: [" Laptop", "Desktop PC"],
+    },
     {
       name: "Projector",
       icon: <LuProjector />,
-      subItems: ["Item 1", "Item 2"],
+      subItems: ["New Projector ", "Used Projector"],
     },
     { name: "Macbook", icon: <FaLaptop />, subItems: [] },
     { name: "Contact Us", icon: <FiPhone />, subItems: [] },
@@ -77,11 +81,6 @@ const SideBar = () => {
             )}
           </li>
         ))}
-        <li className="mt-8">
-          <button className="flex items-center text-left">
-            <span>More</span>
-          </button>
-        </li>
       </ul>
     </div>
   );

@@ -9,6 +9,9 @@ import Layout from "./Layout.jsx";
 import { DataProvider } from "./context/BannerData.jsx";
 import Home from "./Pages/Home/Home.jsx";
 import Shop from "./Pages/Shop/Shop.jsx";
+import Contact from "./Pages/Contact_Us/Contact.jsx";
+import About from "./Pages/About/About.jsx";
+import Blogs from "./Pages/Blog/Blogs.jsx";
 Home;
 
 const router = createBrowserRouter([
@@ -23,6 +26,18 @@ const router = createBrowserRouter([
       {
         path: "shop",
         element: <Shop />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "blogs",
+        element: <Blogs />,
       },
     ],
   },

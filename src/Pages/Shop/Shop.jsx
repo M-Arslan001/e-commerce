@@ -1,105 +1,128 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import SideBar from "../../components/Sidebar/SiderBar";
-
+import Card from "../../components/shared/Card";
+import img1 from "../../assets/product/p-1.jpg";
+import img2 from "../../assets/product/p-2.jpg";
+import img3 from "../../assets/product/p-3.jpg";
+import img4 from "../../assets/product/p-4.jpg";
+import img5 from "../../assets/product/p-5.jpg";
+import img6 from "../../assets/product/p-7.jpg";
+import img7 from "../../assets/product/p-9.jpg";
+import img8 from "../../assets/shop/smartwatch.png";
+import img9 from "../../assets/shop/desktop.avif";
+import img10 from "../../assets/shop/pngegg.png";
+import img11 from "../../assets/shop/samrtwatch01.png";
 function Shop() {
+  const product = [
+    {
+      id: 1,
+      name: "Boat Headphone",
+      description: "This is a sample product description.",
+      price: 19.99,
+      image: img1,
+    },
+    {
+      id: 2,
+      name: "Rocky Mountain",
+      description: "This is a sample product description.",
+      price: 25.55,
+      image: img2,
+    },
+    {
+      id: 3,
+      name: "Goggles",
+      description: "This is a sample product description.",
+      price: 30.55,
+      image: img3,
+    },
+    {
+      id: 4,
+      name: "Rocky ",
+      description: "This is a sample product description.",
+      price: 45.49,
+      image: img4,
+    },
+    {
+      id: 5,
+      name: "Printed ",
+      description: "This is a sample product description.",
+      price: 45.49,
+      image: img5,
+    },
+    {
+      id: 6,
+      name: "Printed ",
+      description: "This is a sample product description.",
+      price: 45.49,
+      image: img6,
+    },
+    {
+      id: 7,
+      name: "Printed ",
+      description: "This is a sample product description.",
+      price: 45.49,
+      image: img7,
+    },
+    {
+      id: 8,
+      name: "Printed ",
+      description: "This is a sample product description.",
+      price: 45.49,
+      image: img1,
+    },
+    // New products
+    {
+      id: 9,
+      name: "Smart Watch",
+      description: "This is a sample product description.",
+      price: 99.99,
+      image: img8,
+    },
+    {
+      id: 10,
+      name: "Lenovo Desktop",
+      description: "This is a sample product description.",
+      price: 29.99,
+      image: img9,
+    },
+    {
+      id: 11,
+      name: "Projector",
+      description: "This is a sample product description.",
+      price: 59.99,
+      image: img10,
+    },
+    {
+      id: 12,
+      name: "Fitness Tracker",
+      description: "This is a sample product description.",
+      price: 39.99,
+      image: img11,
+    },
+  ];
   return (
     <>
       {" "}
       {/* Content */}
-      <div className="container mx-auto mt-8 px-4 flex">
+      <div className="container mx-auto mt-8 px-4   ">
         {/* Sidebar */}
-        <div className="w-1/4">
-          {/* <div className="bg-white p-4 rounded shadow"> */}
-          <SideBar />
-          {/* </div> */}
-
-          <div className="bg-white p-4 rounded shadow mt-8">
-            <h3 className="text-xl font-bold mb-4">Filter by</h3>
-            <div className="mb-4">
-              <label className="block mb-2">Price</label>
-              <input
-                type="text"
-                placeholder="Min"
-                className="border rounded w-full px-3 py-2"
-              />
-              <input
-                type="text"
-                placeholder="Max"
-                className="border rounded w-full px-3 py-2 mt-2"
-              />
-              <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
-                Apply
-              </button>
-              <button className="mt-2 bg-gray-500 text-white px-4 py-2 rounded">
-                Clear
-              </button>
-            </div>
-          </div>
+        {/* <div className="w-1/4"> */}
+        {/* <div className="bg-white p-4 rounded shadow"> */}
+        {/* <SideBar /> */}
+        {/* </div> */}
+        {/* </div> */}
+        <div className=" bg-brandGreen/55 text-white text-center py-8 rounded-md mb-8">
+          <h1 className="text-3xl font-bold">Shop Your Favorite Products</h1>
         </div>
 
         {/* Main Content */}
-        <div className="w-3/4">
-          <div className="flex justify-between items-center mb-4">
-            <div>
-              <label>Show: </label>
-              <select className="border rounded px-3 py-2">
-                <option>6</option>
-                <option>12</option>
-                <option>18</option>
-              </select>
-            </div>
-            <div>
-              <label>Sort by: </label>
-              <select className="border rounded px-3 py-2">
-                <option>Oldest First</option>
-                <option>Newest First</option>
-              </select>
-            </div>
-          </div>
 
-          {/* Products */}
-          <div className="grid grid-cols-3 gap-4">
-            <div className="bg-white p-4 rounded shadow">
-              <img
-                src="laptop.jpg"
-                alt="Product"
-                className="w-full h-40 object-cover"
-              />
-              <h3 className="text-lg font-bold mt-4">Acer C720</h3>
-              <p className="text-gray-500">$479.00</p>
-              <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
-                Add to Cart
-              </button>
-            </div>
-            <div className="bg-white p-4 rounded shadow">
-              <span className="text-white bg-red-500 px-2 py-1 text-xs rounded absolute">
-                SALE
-              </span>
-              <img
-                src="ipad.jpg"
-                alt="Product"
-                className="w-full h-40 object-cover"
-              />
-              <h3 className="text-lg font-bold mt-4">Apple iPad Air 2</h3>
-              <p className="text-gray-500">$548.00</p>
-              <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
-                Add to Cart
-              </button>
-            </div>
-            <div className="bg-white p-4 rounded shadow">
-              <img
-                src="speaker.jpg"
-                alt="Product"
-                className="w-full h-40 object-cover"
-              />
-              <h3 className="text-lg font-bold mt-4">Beats by Dre</h3>
-              <p className="text-gray-500">$153.00</p>
-              <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
-                Add to Cart
-              </button>
-            </div>
-          </div>
+        {/* Products */}
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4  gap-4">
+          {product.map((product) => (
+            <Card key={product.id} product={product} />
+          ))}
         </div>
       </div>
     </>

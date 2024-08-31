@@ -34,13 +34,19 @@ function Navbar() {
     },
     {
       id: 3,
-      name: "About",
-      link: "/about",
+      name: "Blogs",
+      link: "/blogs",
     },
     {
       id: 4,
-      name: "Blogs",
-      link: "/blogs",
+      name: "About",
+      link: "/about",
+    },
+
+    {
+      id: 5,
+      name: "Contact Us",
+      link: "/contact",
     },
   ];
 
@@ -77,7 +83,12 @@ function Navbar() {
                   className="dark:hover:text-white text-gray-500 hover:text-black font-semibold my-7 md:my-0 md:ml-5 "
                   key={index}
                 >
-                  <NavLink to={data.link} activeClassName="text-brandGreen">
+                  <NavLink
+                    to={data.link}
+                    className={({ isActive }) =>
+                      isActive ? "text-primary" : "text-gray-700"
+                    }
+                  >
                     {data.name}
                   </NavLink>
                 </li>

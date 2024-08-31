@@ -7,7 +7,7 @@ const Card = ({ product }) => {
     <>
       <div className="max-w-sm rounded overflow-hidden shadow-lg bg-brandGreen/55">
         <img
-          className="w-full h-53 object-cover"
+          className="w-full h-53 object-cover bg-white"
           src={product.image}
           alt={product.name}
         />
@@ -19,7 +19,7 @@ const Card = ({ product }) => {
           <span className="text-xl font-bold text-gray-900">
             ${product.price.toFixed(2)}
           </span>
-          <button className="  text-brandGreen font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline bg-white">
+          <button className="  text-brandGreen font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline bg-white">
             Add to Cart
           </button>
         </div>
